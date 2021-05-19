@@ -3,10 +3,13 @@ This project was created for my (AUD481/ECE481/ECT481) Capstone Design Project.
 NOISE MONITORING SYSTEM 
 
 Team Members: Liam Platt, Paul Wehbe, and Rich Patino 
-Faculty Advisor: Krista Hill 
+
+Faculty Advisor: Krista Hill
+
 Spring 2021
  
 1. Project Overview 
+
 1.1 Project Outline 
 
 Our project consists of an integrated noise monitoring system designed to be utilized in residential spaces where noise can have a lasting and detrimental impact on residents. Specifically, this project is aimed at controlling and monitoring the often-excessive noise found in on-campus dormitory housing. The health effects of such noise are quantifiable by long-term hearing loss, disturbance of sleep and rest, social and behavioral problems, as well as temporary and permanent physiological and psychological conditions.  
