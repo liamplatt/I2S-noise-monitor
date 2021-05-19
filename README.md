@@ -3,13 +3,10 @@ This project was created for my (AUD481/ECE481/ECT481) Capstone Design Project.
 NOISE MONITORING SYSTEM 
 
 Team Members: Liam Platt, Paul Wehbe, and Rich Patino 
-
 Faculty Advisor: Krista Hill 
-
 Spring 2021
  
 1. Project Overview 
-
 1.1 Project Outline 
 
 Our project consists of an integrated noise monitoring system designed to be utilized in residential spaces where noise can have a lasting and detrimental impact on residents. Specifically, this project is aimed at controlling and monitoring the often-excessive noise found in on-campus dormitory housing. The health effects of such noise are quantifiable by long-term hearing loss, disturbance of sleep and rest, social and behavioral problems, as well as temporary and permanent physiological and psychological conditions.  
@@ -40,7 +37,10 @@ Paul Wehbe is an Electrical Engineering student with a passion in communications
 
 Rich Patino is a Computer Engineering student with an interest in computer programming and hardware implementation. His work area throughout the project included commitments to creating back-end development with Google Firebase and Microsoft Visual Studio, design of the live dashboard web application, and developing email and text message system that was used to notify the resident.  
  
- ![SystemDiagram_white](https://user-images.githubusercontent.com/75287552/118797397-8ad21500-b86a-11eb-9a0a-20df1c17ad40.png)
+![SystemDiagram_HighPPI](https://user-images.githubusercontent.com/75287552/118797514-ab9a6a80-b86a-11eb-90d3-88eeb4da43f8.png)
+
+
+![SLM_BlockDiagram](https://user-images.githubusercontent.com/75287552/118797581-bfde6780-b86a-11eb-85fd-f2c2c1b4bacc.png)
 
 
  
