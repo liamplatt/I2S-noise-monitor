@@ -3,7 +3,7 @@
 #!/usr/bin/env python3 -*- coding: utf-8 -*-
 """
 Created on Wed Dec 23 08:28:33 2020
-Last Rev: Thu April 22nd 2021
+Last Major Rev: May 10th 2021
 @author: Liam Platt
 Capstone Design Project
 """
@@ -15,8 +15,7 @@ import pyaudio
 import sys
 from math import isnan
 from numpy import log10, int32, sqrt, frombuffer
-import time, datetime, csv
-import time, os
+import time, datetime, csv, os
 from time import sleep
 from gpiozero import LED
 import gpiozero as GPIO
@@ -60,8 +59,10 @@ sens = -26 #Define the sensitivity of the mic from datasheet
 #Equation for calculating mic_sens in mV/Pa 
 #sens_db = 20*log10(sens(in mV/Pa) / 94dB)
 sens_mv = pow(10, (sens/20))
-#This will be the sample value in which a measurement should evaluate to 94dB
-mic_ref = sens_mv*((1<<(BD - 1))-1) 
+
+#This will be the sample value in which a measurement should evaluate to 94dB or -sens dBFS
+#print(20*np.log10((pow(10, (sens/20))*((1<<(BD - 1))-1))/pow(2,23))) = -26dBFS
+mic_ref = sens_mv*((1<<(BD - 1))-1)  
 
 
 #Max and min values that mic should could read in
