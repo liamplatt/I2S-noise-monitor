@@ -35,7 +35,6 @@ def test_SPL():
     ref_1k = 94
     mic_ref = 420426
     #Create static calibration signal
-    que = [cal]*375
     inf = 'NA'
     #Note: Testing parameters listed below were taken from MATLAB weightingFilter.m
     #Reworked for python
@@ -63,15 +62,6 @@ def test_SPL():
         que.append(weight_signal(sig))
         maxes.append(max(sig))
         ind+=1
-    
-    """#Create ramp signal to test range of SPL values
-    for i in range(pow(2, 23)):
-        que.append(i)
-    que_FS = []
-    #Create a ramp of dbFS values to demonstrate DR
-    for i in range(pow(2, 23)):
-        que_FS.append(i/pow(2, 23))
-    """
     OS = 3.5
     shorts = []
     short = []
@@ -92,12 +82,12 @@ def test_SPL():
         avg = avg_db(spl)
         shorts.append(avg)
         i+=1
-    """plt.plot(test_freqs, normalized_amp)
+    plt.plot(test_freqs, normalized_amp)
     plt.xscale('log')
     plt.xlabel("Frequency (Hz)")
     plt.ylabel("Amplitude (dBFS)")
     plt.title("Frequency Response of IIR A-weighted Filter")
-    plt.show()"""
+    plt.show()
     open_csv()
     for i in range(len(shorts)):
         #Subtract to find our "goal" or expected value for each frequency
